@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Aula Alura JS</title>
+    </head>
+    <body>
+        <script>
+
+            function pulaLinha() {
+    
+                document.write("<br>");
+                document.write("<br>");
+            }
+    
+            function mostra(frase) {
+    
+                document.write(frase);
+                pulaLinha();
+            }
+    
+            var multiplicador = 1;
+            var numero = parseInt(prompt("Digite o número que você quer ver a tabuada."))
+
+            // For ( var; condição while; transformar condição false (incremento) )
+            //for(var multiplicador = 1; multiplicador <= 10; multiplicador = multiplicador + 1 ou multiplicador++) {
+
+                //mostra(numero * multiplicador);
+            //}
+
+            while (multiplicador <= 10) {
+
+                mostra (numero * multiplicador);
+                multiplicador = multiplicador + 1;
+            }
+
+            mostra("FIM!")
+        </script>
+    </body>
+</html>
